@@ -1,3 +1,4 @@
+#importing library 
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -39,3 +40,15 @@ if __name__=="__main__":
     main()
 
 
+#creating graphs
+plt.bar(df["Name"], df["Marks"])
+plt.title("Student Marks")
+plt.savefig("charts/marks_bar.png")
+plt.show()
+plt.close()
+
+plt.plot(df["Name"], df["Attendance"])
+plt.title("Attendance")
+plt.savefig("charts/attendance_line.png")
+plt.show()
+plt.close()
