@@ -43,6 +43,8 @@ if __name__=="__main__":
 #creating graphs
 plt.bar(df["Name"], df["Marks"])
 plt.title("Student Marks")
+plt.xlabel("Name")
+plt.xlabel("Marks")
 plt.savefig("charts/marks_bar.png")
 plt.show()
 plt.close()
